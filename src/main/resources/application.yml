@@ -5,7 +5,7 @@ spring:
     active: dev
 
 jwt:
-  secret: ${JWT_SECRET:default-secret-dev-only-change-in-prod}
+  secret: ${JWT_SECRET}
   expiration: 3600000
 
 ---
@@ -45,5 +45,5 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
 jwt:
-  secret: ${JWT_SECRET:default-secret-dev-only}
+  secret: ${JWT_SECRET}
   expiration: 3600000
