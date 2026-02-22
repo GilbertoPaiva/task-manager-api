@@ -36,7 +36,6 @@ public class TaskController {
         return ResponseEntity.ok(tasks);
     }
 
-    //Add: Get task by id
     @GetMapping("/{id}")
     public ResponseEntity<TaskResponse> findById(@PathVariable("id") UUID taskId,
                                                  Authentication authentication) {
